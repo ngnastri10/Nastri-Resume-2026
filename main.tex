@@ -1,0 +1,141 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[letterpaper,left=0.5in,right=0.5in,top=0.5in,bottom=0.12in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{label=$\diamond$,leftmargin=1.55em,labelsep=0.55em,itemsep=0.18em,topsep=0.12em,parsep=0pt,partopsep=0pt}
+\renewcommand{\baselinestretch}{1.05}
+
+\newcommand{\basefont}{\fontsize{11.5pt}{13.65pt}\selectfont}
+\newcommand{\namefont}{\fontsize{25pt}{27pt}\selectfont}
+\newcommand{\contactfont}{\fontsize{11.5pt}{13pt}\selectfont}
+
+\newcommand{\sectionlabel}[1]{%
+  {\centering\bfseries\MakeUppercase{#1}\par}
+}
+
+\newcommand{\sectionrule}{\vspace{0.6em}\noindent\rule{\textwidth}{0.5pt}\vspace{0.6em}}
+
+\newcommand{\resrow}[2]{%
+  \noindent
+  \begin{minipage}[t]{1.06in}
+    \sectionlabel{#1}
+  \end{minipage}%
+  \hspace{0.16in}%
+  \begin{minipage}[t]{5.88in}
+    \justifying #2
+  \end{minipage}\par
+}
+
+\newcommand{\entryline}[2]{\noindent #1\hfill #2\par}
+\newcommand{\jobline}[2]{\noindent #1\hfill #2\par}
+
+\begin{document}
+\basefont
+
+\begin{center}
+{\namefont\bfseries NICOLAS NASTRI}
+\end{center}
+
+\vspace{-0.35cm}
+\begin{center}
+{\contactfont\bfseries Washington, DC \;|\; \href{mailto:nn3495a@american.edu}{nn3495a@american.edu} \;|\; +1 (781) 752-8377}
+\end{center}
+
+\vspace{-0.75cm}
+\begin{center}
+{\contactfont
+\href{https://www.linkedin.com/in/niconastri/}{\faLinkedin\ linkedin.com/in/niconastri} \;|\;
+\href{https://niconastri.com/}{\faGlobe\ niconastri.com} \;|\;
+\href{https://github.com/ngnastri10}{\faGithub\ github.com/ngnastri10}}
+\end{center}
+
+\vspace{.3cm}
+
+\resrow{Executive\\Summary}{%
+\begin{itemize}
+    \item Economist and data analyst with experience in energy policy, and applied microeconomics.
+    \item Experience in Stata, Python, R, SQL, and ArcGIS for data analysis and decision support.
+    \item Native English \& Spanish speaker; Advanced French speaker.
+\end{itemize}}
+
+\sectionrule
+
+\resrow{Education}{%
+\entryline{\textbf{American University} -- Ph.D. in Economics}{2022 -- 2027 (Expected Graduation)}
+\entryline{\textbf{Georgetown University} -- M.A. in Political Economy}{2018-2019}
+\entryline{\textbf{Boston University} -- B.A. in Economics \& International Relations}{2012-2016}}
+
+\sectionrule
+
+\resrow{Work\\Experience}{%
+\jobline{\textbf{EPRI -- Sustainability Data Analyst}, Washington D.C.}{August 2025 -- December 2025}
+\begin{itemize}
+    \item Created a product used by electric utility clients to evaluate how different sustainability frameworks align with eight core value areas.
+    \item Queried and processed electric utility data in SQL and Python, cleaning and structuring inputs to benchmark sustainability practices and support tool development.
+\end{itemize}
+
+\vspace{0.65em}
+\jobline{\textbf{The World Bank -- Internship Program (BIP)}, Washington D.C.}{April 2025 -- July 2025}
+\noindent{\itshape Subnational Business Ready Unit -- Electricity\par}
+\begin{itemize}
+    \item Developed an Excel tool assessing electricity cost of service under varying assumptions.
+    \item Contributed to a methodology handbook extending B-READY to evaluate distributed solar.
+    \item Researched electricity laws to assess alignment with B-READY criteria in country reports.
+\end{itemize}
+
+\vspace{0.65em}
+\jobline{\textbf{Sustainable Capital Advisors -- Research Fellow}, Washington D.C.}{2023 -- 2025}
+\begin{itemize}
+    \item Designed and built the ``Geographic Readiness Tool,'' a county level analysis platform evaluating solar energy and EV economic potential to guide client investment decisions.
+\end{itemize}
+
+\vspace{0.65em}
+\jobline{\textbf{Center For Retirement Research -- Research Associate}, Newton MA}{2020 -- 2022}
+\begin{itemize}
+    \item Performed statistical analysis on retirement policies using Stata, including descriptive statistics, regression-based causal estimation, and literature reviews.
+    \item Obtained Special Sworn Status (SSS) to analyze restricted US Census Bureau data.
+\end{itemize}
+
+\vspace{0.65em}
+\jobline{\textbf{Inter-American Dialogue -- Research Intern}, Washington D.C.}{June 2019 -- August 2019}
+\noindent{\itshape Energy, Climate Change, \& Extractive Industries Program\par}}
+
+\sectionrule
+
+\resrow{Research}{%
+\noindent\textbf{Works in Progress}\par
+\begin{itemize}
+    \item ``Carbon Border Adjustments and Directed Technical Change'' (JMP)
+    \item ``Climate Risk, Innovation, and the Diffusion of Green Technologies'' \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6516621}{(SSRN Link)}
+    \item ``ESG Disclosure Mandates and Emissions in Global Value Chains''
+\end{itemize}}
+
+\sectionrule
+
+\resrow{Honors \&\\Awards}{%
+\begin{itemize}
+    \item Frank M. Tamagna Scholarship (2025)
+    \item Econometrics Paper Competition (AU Economics Department)
+\end{itemize}}
+
+\sectionrule
+
+\resrow{Technical\\Skills}{%
+\begin{itemize}
+    \item Programming: Stata, R, Python, SQL, ArcGIS, Latex, Linux HPC Cluster, GitHub, HTML
+    \item Datasets: Bloomberg, WITS, PATSTAT, MSCI ESG, FactSet, Input-Output Tables
+    \item Methods: Causal Inference, Machine Learning, Geo-Spatial Analysis, Web Scraping
+\end{itemize}}
+
+\end{document}
